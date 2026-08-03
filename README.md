@@ -6,8 +6,9 @@
 <br>
 
 <p align="center">
-  <img src="docs/hardware.jpg" width="48%" alt="실물 디오라마 - 침실 축소 모형에 LED 조명, 커튼, 선풍기, LCD를 배치"/>
-  <img src="docs/circuit.jpg" width="40%" alt="후면 회로 구성 - ATmega128A 보드, 브레드보드, 릴레이, 서보 배선"/>
+  <img src="docs/hardware.jpg" height="320" alt="실물 디오라마"/>
+  &nbsp;
+  <img src="docs/circuit.jpg" height="320" alt="후면 회로 구성"/>
 </p>
 <p align="center"><i>디오라마 전면(좌) · 후면 회로 구성(우)</i></p>
 
