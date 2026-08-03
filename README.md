@@ -2,7 +2,7 @@
 
 # 🏠 ATmega128A 스마트 홈 : 수면 환경 자동 제어 시스템 (4인)
 
-### ATmega128A Smart Home : Automated Sleep Environment Control System (Team of 4)
+### Automated Sleep Environment Control System (Team of 4)
 
 <br>
 
@@ -27,7 +27,7 @@
 
 <br>
 
-ATmega128A 베어메탈 환경에서 ADC 기반 조도 측정, Timer/PWM 기반 LED 및 서보모터 제어, TWI 기반 I2C LCD 통신, GPIO 비트뱅잉 기반 DHT11 온·습도 통신을 구현했습니다. 센서값 안정화를 위해 평균 필터와 히스테리시스를 적용하고, 버튼 디바운싱과 통신 타임아웃 처리를 통해 동작 신뢰성을 높였습니다. 전체 펌웨어는 드라이버·디바이스·애플리케이션 계층으로 분리해 하드웨어 제어와 장치별 제어 로직을 체계적으로 구성했습니다.
+수면 환경을 자동으로 제어하는 **ATmega128A 기반 스마트 홈 제어 시스템**입니다. 베어메탈 환경에서 **ADC 기반 조도 측정, Timer/PWM 기반 LED·서보모터 제어, TWI 기반 I2C LCD 통신, GPIO 비트뱅잉 기반 DHT11 온·습도 통신**을 구현했습니다. 또한 **평균 필터, 히스테리시스, 버튼 디바운싱, 통신 타임아웃 처리**를 적용하고, 전체 펌웨어를 **드라이버·디바이스·애플리케이션 계층**으로 분리해 구성했습니다.
 
 <br>
 
