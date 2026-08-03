@@ -137,13 +137,22 @@ flowchart LR
 하드웨어 의존 코드와 제어 정책을 분리한 3계층 구조입니다.
 MCU를 교체하더라도 `app/` 계층은 수정 없이 재사용할 수 있도록 설계했습니다.
 
-```mermaid
-flowchart TB
-    APP["<b>app/</b> — 제어 정책 (무엇을, 언제, 왜)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>light_control · curtain · fan_control"]
-    DEV["<b>devices/</b> — 부품 프로토콜 (어떻게 대화하는가)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>lcd1602 · dht11"]
-    DRV["<b>drivers/</b> — MCU 주변장치 (레지스터 제어)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>adc · i2c · button"]
-    APP --> DEV --> DRV
-```
+<table align="center">
+  <tr><td align="center">
+    <b>app/</b> — 제어 정책 (무엇을, 언제, 왜)<br>
+    <code>light_control · curtain · fan_control</code>
+  </td></tr>
+  <tr><td align="center">⬇️ 호출</td></tr>
+  <tr><td align="center">
+    <b>devices/</b> — 부품 프로토콜 (어떻게 대화하는가)<br>
+    <code>lcd1602 · dht11</code>
+  </td></tr>
+  <tr><td align="center">⬇️ 호출</td></tr>
+  <tr><td align="center">
+    <b>drivers/</b> — MCU 주변장치 (레지스터 직접 제어)<br>
+    <code>adc · i2c · button</code>
+  </td></tr>
+</table>
 
 ```
 Project01_SmartHome/
