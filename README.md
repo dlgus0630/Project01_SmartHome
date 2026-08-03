@@ -1,3 +1,38 @@
+<div align="center">
+
+# 🏠 ATmega128A Smart Home
+
+### Automated Sleep Environment Control System
+
+**ATmega128A 기반 수면 환경 자동 제어 스마트 홈 시스템 · Team of 4**
+
+<br>
+
+<img src="https://img.shields.io/badge/MCU-ATmega128A-00599C?style=for-the-badge&logo=microchip&logoColor=white">
+<img src="https://img.shields.io/badge/Language-Embedded_C-A8B9CC?style=for-the-badge&logo=c&logoColor=white">
+<img src="https://img.shields.io/badge/Platform-AVR-E34F26?style=for-the-badge">
+<img src="https://img.shields.io/badge/Firmware-Bare_Metal-4B5563?style=for-the-badge">
+
+<br>
+
+<img src="https://img.shields.io/badge/ADC-Sensor_Input-0EA5E9?style=flat-square">
+<img src="https://img.shields.io/badge/PWM-Motor_Control-8B5CF6?style=flat-square">
+<img src="https://img.shields.io/badge/I2C-TWI-22C55E?style=flat-square">
+<img src="https://img.shields.io/badge/GPIO-Bit_Banging-F59E0B?style=flat-square">
+<img src="https://img.shields.io/badge/Architecture-Layered_Firmware-EF4444?style=flat-square">
+<img src="https://img.shields.io/badge/Team-4_Members-64748B?style=flat-square">
+
+</div>
+
+<br>
+
+수면 환경에 최적화된 스마트 홈 시스템입니다. 조도·온습도 등 환경 변화에
+실시간으로 동기화되는 Auto 모드와 사용자가 직접 개입할 수 있는 Manual 모드를
+지원합니다.
+
+베어메탈 환경에서 ADC, PWM, TWI 및 GPIO 비트뱅잉 통신을 구현하고,
+조명·커튼·선풍기를 자동 제어하도록 설계했습니다.
+
 # 🏠 ATmega128A 스마트 홈 : 수면 환경 자동 제어 시스템
 
 **수면 환경에 최적화된 스마트 홈 시스템**입니다. 조도·온습도 등 실외 환경 변화에 실시간으로 동기화되는 Auto 모드와 사용자가 직접 개입할 수 있는 Manual 모드를 지원하는 하이브리드 제어 환경을 목표로, 조명·커튼·선풍기를 제어하여 최적의 수면 환경을 조성합니다.
