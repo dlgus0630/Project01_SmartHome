@@ -316,7 +316,7 @@ make flash    # 보드 플래시 (avrdude, 프로그래머 환경에 맞게 수�
 make clean    # 빌드 산출물 삭제
 ```
 
-Microchip Studio 사용 시에는 ATmega128A 타겟으로 새 프로젝트를 만들고 전체 소스를 포함해 빌드합니다. Makefile 없이 직접 빌드하려면:
+Microchip Studio 사용 시에는 ATmega128A 타겟으로 새 프로젝트를 만들고 전체 소스를 포함해 빌드합니다. Makefile 없이 직접 빌드하려면 :
 
 ```bash
 avr-gcc -mmcu=atmega128 -Os -DF_CPU=16000000UL \
