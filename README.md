@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🏠 ATmega128A 스마트 홈 : 수면 환경 자동 제어 시스템
+# 🏠 ATmega128A 스마트 홈 : 수면 환경 자동 제어 시스템 (4인)
 
-### Automated Sleep Environment Control System (Team of 4)
+### ATmega128A Smart Home : Automated Sleep Environment Control System (Team of 4)
 
 <br>
 
