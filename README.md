@@ -2,9 +2,7 @@
 
 # 🏠 ATmega128A 스마트 홈 : 수면 환경 자동 제어 시스템
 
-### Automated Sleep Environment Control System
-
-**ATmega128A 기반 수면 환경 자동 제어 스마트 홈 시스템 · Team of 4**
+### Automated Sleep Environment Control System (Team of 4)
 
 <br>
 
@@ -25,33 +23,11 @@
 
 <br>
 
-<table align="center">
-  <tr>
-    <td align="center" width="50%">
-      <img src="docs/hardware.jpg" width="95%" alt="실물 디오라마 전면" />
-      <br/>
-      <sub><b>디오라마 전면</b></sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="docs/circuit.jpg" width="95%" alt="후면 회로 구성" />
-      <br/>
-      <sub><b>후면 회로 구성</b></sub>
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <i>조도 · 온습도 기반으로 조명, 커튼, 선풍기를 자동 제어하는 스마트 홈 시스템</i>
-</p>
+<p align="center">  <img src="docs/hardware.jpg" height="320" alt="실물 디오라마"/>  &nbsp;  <img src="docs/circuit.jpg" height="320" alt="후면 회로 구성"/></p><p align="center"><i>디오라마 전면(좌) · 후면 회로 구성(우)</i></p>
 
 <br>
 
-수면 환경에 최적화된 스마트 홈 시스템입니다.  
-조도·온습도 등 환경 변화에 실시간으로 동기화되는 **Auto 모드**와  
-사용자가 직접 제어할 수 있는 **Manual 모드**를 지원합니다.
-
-베어메탈 환경에서 **ADC, PWM, TWI 및 GPIO 비트뱅잉 통신**을 구현하고,  
-조명·커튼·선풍기를 자동 제어하도록 설계했습니다.
+ATmega128A 베어메탈 환경에서 ADC 기반 조도 측정, Timer/PWM 기반 LED 및 서보모터 제어, TWI 기반 I2C LCD 통신, GPIO 비트뱅잉 기반 DHT11 온·습도 통신을 구현했습니다. 센서값 안정화를 위해 평균 필터와 히스테리시스를 적용하고, 버튼 디바운싱과 통신 타임아웃 처리를 통해 동작 신뢰성을 높였습니다. 전체 펌웨어는 드라이버·디바이스·애플리케이션 계층으로 분리해 하드웨어 제어와 장치별 제어 로직을 체계적으로 구성했습니다.
 
 <br>
 
