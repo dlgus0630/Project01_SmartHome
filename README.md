@@ -2,41 +2,56 @@
 
 # 🏠 ATmega128A 스마트 홈 : 수면 환경 자동 제어 시스템
 
-### Automated Sleep Environment Control System (Team of 4)
+### Automated Sleep Environment Control System
+
+**ATmega128A 기반 수면 환경 자동 제어 스마트 홈 시스템 · Team of 4**
 
 <br>
 
-<img src="https://img.shields.io/badge/MCU-ATmega128A-00599C?style=for-the-badge&logo=microchip&logoColor=white">
-<img src="https://img.shields.io/badge/Language-Embedded_C-A8B9CC?style=for-the-badge&logo=c&logoColor=white">
-<img src="https://img.shields.io/badge/Platform-AVR-E34F26?style=for-the-badge">
-<img src="https://img.shields.io/badge/Firmware-Bare_Metal-4B5563?style=for-the-badge">
+<img src="https://img.shields.io/badge/MCU-ATmega128A-2F80ED?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Language-Embedded_C-6FCF97?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Platform-AVR-EB5757?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Firmware-Bare_Metal-828282?style=for-the-badge" />
 
 <br>
 
-<img src="https://img.shields.io/badge/ADC-Sensor_Input-0EA5E9?style=flat-square">
-<img src="https://img.shields.io/badge/PWM-Motor_Control-8B5CF6?style=flat-square">
-<img src="https://img.shields.io/badge/I2C-TWI-22C55E?style=flat-square">
-<img src="https://img.shields.io/badge/GPIO-Bit_Banging-F59E0B?style=flat-square">
-<img src="https://img.shields.io/badge/Architecture-Layered_Firmware-EF4444?style=flat-square">
-<img src="https://img.shields.io/badge/Team-4_Members-64748B?style=flat-square">
+<img src="https://img.shields.io/badge/ADC-Sensor_Input-56CCF2?style=flat-square" />
+<img src="https://img.shields.io/badge/PWM-Motor_Control-BD10E0?style=flat-square" />
+<img src="https://img.shields.io/badge/I2C-TWI-27AE60?style=flat-square" />
+<img src="https://img.shields.io/badge/GPIO-Bit_Banging-F2994A?style=flat-square" />
+<img src="https://img.shields.io/badge/Architecture-Layered_Firmware-D7263D?style=flat-square" />
 
 </div>
 
 <br>
 
-수면 환경에 최적화된 스마트 홈 시스템입니다. 조도·온습도 등 환경 변화에
-실시간으로 동기화되는 Auto 모드와 사용자가 직접 개입할 수 있는 Manual 모드를
-지원합니다. 베어메탈 환경에서 ADC, PWM, TWI 및 GPIO 비트뱅잉 통신을 구현하고,
-조명·커튼·선풍기를 자동 제어하도록 설계했습니다.
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/hardware.jpg" width="95%" alt="실물 디오라마 전면" />
+      <br/>
+      <sub><b>디오라마 전면</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/circuit.jpg" width="95%" alt="후면 회로 구성" />
+      <br/>
+      <sub><b>후면 회로 구성</b></sub>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <i>조도 · 온습도 기반으로 조명, 커튼, 선풍기를 자동 제어하는 스마트 홈 시스템</i>
+</p>
 
 <br>
 
-<p align="center">
-  <img src="docs/hardware.jpg" height="320" alt="실물 디오라마"/>
-  &nbsp;
-  <img src="docs/circuit.jpg" height="320" alt="후면 회로 구성"/>
-</p>
-<p align="center"><i>디오라마 전면(좌) · 후면 회로 구성(우)</i></p>
+수면 환경에 최적화된 스마트 홈 시스템입니다.  
+조도·온습도 등 환경 변화에 실시간으로 동기화되는 **Auto 모드**와  
+사용자가 직접 제어할 수 있는 **Manual 모드**를 지원합니다.
+
+베어메탈 환경에서 **ADC, PWM, TWI 및 GPIO 비트뱅잉 통신**을 구현하고,  
+조명·커튼·선풍기를 자동 제어하도록 설계했습니다.
 
 <br>
 
