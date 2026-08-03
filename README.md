@@ -2,9 +2,7 @@
 
 # 🏠 ATmega128A 스마트 홈 : 수면 환경 자동 제어 시스템
 
-### Automated Sleep Environment Control System
-
-**ATmega128A 기반 수면 환경 자동 제어 스마트 홈 시스템 · Team of 4**
+### Automated Sleep Environment Control System (Team of 4)
 
 <br>
 
