@@ -137,22 +137,24 @@ flowchart LR
 하드웨어 의존 코드와 제어 정책을 분리한 3계층 구조입니다.
 MCU를 교체하더라도 `app/` 계층은 수정 없이 재사용할 수 있도록 설계했습니다.
 
-<table align="center">
-  <tr><td align="center">
-    <b>app/</b> — 제어 정책 (무엇을, 언제, 왜)<br>
-    <code>light_control · curtain · fan_control</code>
-  </td></tr>
-  <tr><td align="center">⬇️ 호출</td></tr>
-  <tr><td align="center">
-    <b>devices/</b> — 부품 프로토콜 (어떻게 대화하는가)<br>
-    <code>lcd1602 · dht11</code>
-  </td></tr>
-  <tr><td align="center">⬇️ 호출</td></tr>
-  <tr><td align="center">
-    <b>drivers/</b> — MCU 주변장치 (레지스터 직접 제어)<br>
-    <code>adc · i2c · button</code>
-  </td></tr>
-</table>
+```
+┌──────────────────────────────────────────────────┐
+│                                                  │
+│   app/       제어 정책 (무엇을, 언제, 왜)        │
+│              light_control · curtain · fan       │
+│                                                  │
+├──────────────────────────────────────────────────┤
+│                                                  │
+│   devices/   부품 프로토콜 (어떻게 대화하는가)   │
+│              lcd1602 · dht11                     │
+│                                                  │
+├──────────────────────────────────────────────────┤
+│                                                  │
+│   drivers/   MCU 주변장치 (레지스터 제어)        │
+│              adc · i2c · button                  │
+│                                                  │
+└──────────────────────────────────────────────────┘
+```
 
 ```
 Project01_SmartHome/
