@@ -139,9 +139,9 @@ MCU를 교체하더라도 `app/` 계층은 수정 없이 재사용할 수 있도
 
 ```mermaid
 flowchart TB
-    APP["<b>app/</b> — 제어 정책 (무엇을, 언제, 왜)<br/>light_control · curtain · fan_control"]
-    DEV["<b>devices/</b> — 부품 프로토콜 (어떻게 대화하는가)<br/>lcd1602 · dht11"]
-    DRV["<b>drivers/</b> — MCU 주변장치 (레지스터 제어)<br/>adc · i2c · button"]
+    APP["<b>app/</b> — 제어 정책 (무엇을, 언제, 왜)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>light_control · curtain · fan_control"]
+    DEV["<b>devices/</b> — 부품 프로토콜 (어떻게 대화하는가)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>lcd1602 · dht11"]
+    DRV["<b>drivers/</b> — MCU 주변장치 (레지스터 제어)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>adc · i2c · button"]
     APP --> DEV --> DRV
 ```
 
@@ -194,11 +194,9 @@ stateDiagram-v2
     [*] --> CLOSED
     CLOSED --> OPEN : 조도 > 300
     OPEN --> CLOSED : 조도 < 200
-    note right of CLOSED
-        200~300 구간은 현재 상태 유지
-        목표 각도까지 1스텝씩 점진 이동
-    end note
 ```
+
+조도 200~300 구간은 현재 상태를 유지하며(히스테리시스), 개폐 시 목표 각도까지 1스텝씩 점진 이동합니다.
 
 ### 8-2. 선풍기 (모드 × 동작 상태)
 
