@@ -1,0 +1,17 @@
+# 빌드 산출물
+*.elf
+*.hex
+*.o
+*.map
+*.lss
+*.eep
+
+# Microchip Studio / Atmel Studio
+Debug/
+Release/
+*.atsuo
+*.componentinfo.xml
+.vs/
+
+# 기타
+*.bak
