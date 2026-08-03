@@ -5,6 +5,7 @@
 ### Automated Sleep Environment Control System (Team of 4)
 
 <br>
+<br>
 
 <img src="https://img.shields.io/badge/MCU-ATmega128A-2F80ED?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Language-Embedded_C-6FCF97?style=for-the-badge" />
@@ -20,8 +21,6 @@
 <img src="https://img.shields.io/badge/Architecture-Layered_Firmware-D7263D?style=flat-square" />
 
 </div>
-
-<br>
 
 <p align="center">  <img src="docs/hardware.jpg" height="320" alt="실물 디오라마"/>  &nbsp;  <img src="docs/circuit.jpg" height="320" alt="후면 회로 구성"/></p><p align="center"><i>디오라마 전면(좌) · 후면 회로 구성(우)</i></p>
 
