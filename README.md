@@ -37,7 +37,7 @@
 조도 센서를 손으로 가리면 커튼이 서보모터로 부드럽게 닫히고, LCD에 각 장치 상태가 실시간 표시됩니다.
 
 <p align="center">
-  <img src="docs/demo_curtain.gif" width="85%" alt="커튼 자동 개폐 시연"/>
+  <img src="docs/demo_curtain.gif" width="75%" alt="커튼 자동 개폐 시연"/>
 </p>
 
 <!-- 아래 줄에 GitHub 업로드 영상 URL(user-attachments)을 단독 한 줄로 붙여넣으면 인라인 재생됩니다 -->
