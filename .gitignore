@@ -15,3 +15,14 @@ Release/
 
 # 기타
 *.bak
+
+# CMake
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.eep
+
+# CMake
+build/
+*.eep
