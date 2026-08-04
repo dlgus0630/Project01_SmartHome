@@ -23,7 +23,7 @@
 <br>
 <br>
 
-<p align="center">  <img src="docs/hardware.jpg" height="320" alt="실물 디오라마"/>  &nbsp;  <img src="docs/circuit.jpg" height="320" alt="후면 회로 구성"/></p><p align="center"><i>디오라마 전면(좌) · 후면 회로 구성(우)</i></p>
+<p align="center">  <img src="docs/hardware.jpg" height="320" alt="실물 디오라마"/>  &nbsp;  <img src="docs/circuit.jpg" height="320" alt="후면 회로 구성"/></p><p align="center"><i>디오라마 전면 (좌) · 후면 회로 구성 (우)</i></p>
 
 <br>
 
