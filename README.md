@@ -24,7 +24,7 @@
 <br>
 
 <p align="center">
-  <img src="docs/portfolio.png" width="75%" alt="포트폴리오 프레젠테이션"/>
+  <img src="docs/portfolio.png" width="100%" alt="포트폴리오 프레젠테이션"/>
 </p>
 
 <br>
