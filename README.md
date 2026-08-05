@@ -6,18 +6,19 @@
 
 <br>
 
-<img src="https://img.shields.io/badge/MCU-ATmega128A-2F80ED?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Language-Embedded_C-6FCF97?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Platform-AVR-EB5757?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Firmware-Bare_Metal-828282?style=for-the-badge" />
+<img src="https://img.shields.io/badge/MCU-ATmega128A-2C3E50?style=for-the-badge&labelColor=4A5568" />
+<img src="https://img.shields.io/badge/Language-Embedded_C-34495E?style=for-the-badge&labelColor=4A5568" />
+<img src="https://img.shields.io/badge/Platform-AVR-3D5A80?style=for-the-badge&labelColor=4A5568" />
+<img src="https://img.shields.io/badge/Firmware-Bare_Metal-46627F?style=for-the-badge&labelColor=4A5568" />
 
 <br>
 
-<img src="https://img.shields.io/badge/ADC-Sensor_Input-56CCF2?style=flat-square" />
-<img src="https://img.shields.io/badge/PWM-Motor_Control-BD10E0?style=flat-square" />
-<img src="https://img.shields.io/badge/I2C-TWI-27AE60?style=flat-square" />
-<img src="https://img.shields.io/badge/GPIO-Bit_Banging-F2994A?style=flat-square" />
-<img src="https://img.shields.io/badge/Architecture-Layered_Firmware-D7263D?style=flat-square" />
+<img src="https://img.shields.io/badge/ADC-Sensor_Input-7DA0C4?style=flat-square&labelColor=5A6C7D" />
+<img src="https://img.shields.io/badge/PWM-Motor_Control-7DA0C4?style=flat-square&labelColor=5A6C7D" />
+<img src="https://img.shields.io/badge/I2C-TWI-7DA0C4?style=flat-square&labelColor=5A6C7D" />
+<img src="https://img.shields.io/badge/GPIO-Direct_Control-7DA0C4?style=flat-square&labelColor=5A6C7D" />
+<img src="https://img.shields.io/badge/Build-CMake_/_Make-7DA0C4?style=flat-square&labelColor=5A6C7D" />
+<img src="https://img.shields.io/badge/Architecture-Layered_Firmware-7DA0C4?style=flat-square&labelColor=5A6C7D" />
 
 </div>
 <br>
