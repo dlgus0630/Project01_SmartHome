@@ -73,7 +73,7 @@
 | **I2C** | TWI 마스터 직접 구현 (1602 LCD 제어) |
 | **비트뱅잉** | DHT11 단선 프로토콜 타이밍 직접 구현 |
 | **제어 기법** | 히스테리시스 · 서보 선형 가감속 · 디바운싱 |
-| **구조** | 논블로킹 슈퍼루프, 3계층 아키텍처, Makefile |
+| **구조** | 논블로킹 슈퍼루프, 3계층 아키텍처, CMake / Makefile 빌드 |
 
 <br>
 
@@ -88,7 +88,7 @@
 | 05.08 ~ 09 | 주제 선정, S/W 설계 (환경 센서·액추에이터 선정, 모듈별 독립 코드 설계) |
 | 05.10 ~ 11 | H/W 설계 (시스템 물리 인프라), 시스템 통합 및 H/W-S/W 통합 디버깅 |
 | 05.12 ~ 13 | 시나리오별 자동 제어 동작 시연, 최종 발표 |
-| 08.04 | 사후 보완 — 계층형 아키텍처 리팩토링, Makefile 빌드 자동화, 문서화 및 Git 저장소 구성 |
+| 08.04 | 사후 보완 — 계층형 아키텍처 리팩토링, CMake/Make 빌드 정비, 문서화 및 Git 저장소 구성 |
 
 ### 3-2. 역할 분담
 
@@ -175,15 +175,18 @@ MCU를 교체하더라도 `app/` 계층은 수정 없이 재사용할 수 있도
 
 ```
 Project01_SmartHome/
-├── main.c              # 메인 루프 (측정 → 입력 → 제어 → 주기 작업)
-├── config.h            # 공통 설정 (F_CPU)
+├── main.c                    # 메인 루프 (측정 → 입력 → 제어 → 주기 작업)
+├── config.h                  # 공통 설정 (F_CPU)
+├── CMakeLists.txt            # CMake 빌드 설정
+├── avr-gcc-toolchain.cmake   # AVR 크로스 컴파일 툴체인
+├── Makefile                  # Make 빌드 설정
 ├── drivers/
 │   ├── adc.c/h         # 내장 ADC (AVCC 기준, 분주비 128)
 │   ├── i2c.c/h         # TWI 마스터 (100kHz)
 │   └── button.c/h      # 버튼 엣지 검출 + 디바운싱
 ├── devices/
 │   ├── lcd1602.c/h     # I2C 백팩 1602 LCD (4비트 모드)
-│   └── dht11.c/h       # DHT11 1-Wire 프로토콜 (타임아웃 안전장치 포함)
+│   └── dht11.c/h       # DHT11 단선 통신 (타임아웃 안전장치 포함)
 ├── app/
 │   ├── light_control.c/h
 │   ├── curtain.c/h
@@ -328,7 +331,16 @@ loop (≈1ms)
 
 ## 13. 빌드
 
-Makefile로 빌드를 자동화했습니다. 소스는 와일드카드로 자동 수집되며, 헤더 의존성 추적을 지원합니다.
+CMake와 Make 두 가지 빌드 방식을 지원합니다. 소스는 와일드카드로 자동 수집됩니다.
+
+**CMake** (개발 환경 : VSCode + AVR-GCC)
+
+```bash
+cmake -B build -DCMAKE_TOOLCHAIN_FILE=avr-gcc-toolchain.cmake
+cmake --build build
+```
+
+**Make** (CMake 없이 바로 빌드)
 
 ```bash
 make          # 전체 컴파일 → smart_home.hex 생성
@@ -337,10 +349,4 @@ make flash    # 보드 플래시 (avrdude, 프로그래머 환경에 맞게 수�
 make clean    # 빌드 산출물 삭제
 ```
 
-Microchip Studio 사용 시에는 ATmega128A 타겟으로 새 프로젝트를 만들고 전체 소스를 포함해 빌드합니다. Makefile 없이 직접 빌드하려면 :
-
-```bash
-avr-gcc -mmcu=atmega128 -Os -DF_CPU=16000000UL \
-  main.c drivers/*.c devices/*.c app/*.c -o smart_home.elf
-avr-objcopy -O ihex smart_home.elf smart_home.hex
-```
+빌드 결과 : 플래시 2.85% (3,734 B / 128 KB), RAM 2.2% (90 B / 4 KB)
