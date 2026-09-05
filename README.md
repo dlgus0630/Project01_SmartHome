@@ -24,12 +24,6 @@
 <br>
 
 <p align="center">
-  <img src="docs/portfolio.png" width="100%" alt="포트폴리오 프레젠테이션"/>
-</p>
-
-<br>
-
-<p align="center">
   <img src="docs/portfolio.jpg" width="100%" alt="스마트홈 프로젝트 포트폴리오"/>
 </p>
 
