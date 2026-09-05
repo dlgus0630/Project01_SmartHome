@@ -29,7 +29,15 @@
 
 <br>
 
-<p align="center">  <img src="docs/hardware.jpg" height="320" alt="실물 디오라마"/>  &nbsp;  <img src="docs/circuit.jpg" height="320" alt="후면 회로 구성"/></p><p align="center"><i>디오라마 전면 (좌) · 후면 회로 구성 (우)</i></p>
+<p align="center">
+  <img src="docs/portfolio.jpg" width="100%" alt="스마트홈 프로젝트 포트폴리오"/>
+</p>
+
+<p align="center">
+  <img src="docs/hardware.png" width="49%" alt="스마트홈 디오라마 전면"/>
+  <img src="docs/circuit.png" width="49%" alt="스마트홈 후면 회로 구성"/>
+</p>
+<p align="center"><i>디오라마 전면 (좌) · 후면 회로 구성 (우)</i></p>
 
 <br>
 
